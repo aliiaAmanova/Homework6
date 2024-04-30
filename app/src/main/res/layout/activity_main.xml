@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вход"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        />
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добро пожаловать!"
+        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/toDoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выполните вход или зарегистрируйтесь"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/welcomeText"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@id/loginText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="  Введите вашу почту"
+        android:textColor="#736666"
+        android:background ="@drawable/background"
+        android:layout_below="@id/toDoText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        />
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="  Введите ваш пароль"
+        android:textColor="#736666"
+        android:background ="@drawable/background"
+        android:layout_below="@id/loginText"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLogin"
+        android:text="Войти"
+        android:backgroundTint="#736666"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_below="@id/passwordText"
+        />
+
+    <TextView
+        android:id="@+id/forgotPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Забыли пароль?"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonLogin"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/forgotPasswordText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нажмите сюда"
+        android:textSize="16sp"
+        android:textColor="#CDDC39"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/forgotPasswordText"
+        android:layout_marginTop="8dp" />
+
+
+
+
+
+
+
+</RelativeLayout>
